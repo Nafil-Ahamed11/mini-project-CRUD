@@ -1,0 +1,35 @@
+
+<%- include('../layouts/header.ejs') %>
+
+<section class="section-body">
+   
+    <div class="login-container ">
+        <h3 class="text-danger"> User Login</h3>
+    
+        <% if (typeof message !== 'undefined') { %>
+        <h4><%= message %></h4>
+        <% } %>
+    
+        <form action="/login" method="post">
+            <input type="email" name="email" required placeholder="Enter email">
+            <br><br>
+            <input type="password" name="password" required placeholder="Enter password">
+            <br><br>
+            <input class="login-button" type="submit" value="Login">
+        </form>
+    
+        <a class="registration-button" href="/register">User Registration</a>
+        <br>
+        <a class="admin-button text-decoration-none text-danger" href="/admin">Admin Login</a>
+    </div>
+
+   
+    
+ 
+</section>
+
+<%- include('../layouts/footer.ejs') %>
+
+
+
+

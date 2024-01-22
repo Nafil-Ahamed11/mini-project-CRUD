@@ -1,0 +1,621 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section-r{
+    background-image: url('/userImage/pexels-andreea-ch-1166644.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-r .container-r{   
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;   
+
+}
+
+ .section-r .form-heading{
+    text-align: center;
+    font-style: italic;
+    color: #e10d0d;
+    margin-top:20px;
+
+}
+
+
+.section-r .form{
+    padding: 20px; 
+    background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") ; /* Set a background color for the form */
+    border: 1px solid #b11b1b; 
+    border-radius: 5px; 
+
+}
+
+.section-r .form input{
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #9e1212;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+.section-r .form input[type="submit"]{
+    background-color: #e10d0d;
+    width: 100%;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+.section-r .form input[type="submit"]:hover {
+    background-color: #b30000; 
+}
+
+
+
+.section-r .custom-file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.section-r .custom-file-input input[type="file"] {
+    display: none;
+}
+
+
+.section-r .custom-file-input label {
+    background-color: #ffffff; 
+    color: #282525; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+
+.section-r .custom-file-input input[type="file"]:hover + label {
+    background-color: #ca1111; 
+}
+
+/*login page */
+
+.section-body {
+    font-family: Arial, sans-serif;
+    background-image: url('/userImage/pexels-francesco-ungaro-673648\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+
+.login-container {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.login-container h1 {
+    text-align: center;
+}
+
+.login-container h4 {
+    color: #ff0000;
+    text-align: center;
+}
+
+.login-container form {
+    text-align: center;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container .login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px; 
+    width: 100%;
+}
+
+.login-container .login-button:hover {
+    background-color: #0056b3;
+}
+
+.login-container .registration-button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px; 
+    margin-top: 10px;
+}
+
+.login-container .registration-button:hover {
+    background-color: #45a049;
+}
+
+/* user home page */
+.user-home-section {
+    font-family: Arial, sans-serif;
+    background-image: url("/userImage/pexels-codioful-\(formerly-gradienta\)-7130473.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    
+}
+
+.container-2{
+border: 1px solid red;
+width: 400px;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin-top: 10%;
+}
+
+.user-home-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.user-home-section .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.user-home-section .image-container {
+    margin-bottom: 20px;
+}
+
+.user-home-section img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.user-home-section .user-info {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    color: #d6c3c3;
+}
+
+
+
+.user-home-section .user-info th, .user-home-section .user-info td {
+    padding: 10px ;
+    text-align: center;
+    
+   
+}
+
+.user-home-section .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-home-section a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.user-home-section a:hover {
+    background-color: #0056b3;
+}
+
+/*user edit section */
+
+.user-edit-section {
+    font-family: Arial, sans-serif;
+   background-image: url("/userImage/pexels-codioful-\(formerly-gradienta\)-7130473.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+   text-align: center;
+   height: 100vh;
+}
+
+.user-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.user-edit-form .form-group {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.user-edit-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.user-edit-form input[type="text"],
+.user-edit-form input[type="email"],
+.user-edit-form input[type="file"],
+.user-edit-form input[type="hidden"],
+.user-edit-form input[type="submit"] {
+    width: 50%; /* Reduce the input width to half */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto; 
+    display: block; 
+}
+
+.user-edit-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-edit-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* admin login section */
+
+.admin-login-section {
+    font-family: Arial, sans-serif;
+    background-image: url("/userImage/pexels-johannes-plenio-1103970.jpg");
+    border-radius: 5px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.admin-login-section .login-container{
+margin: auto;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.admin-login-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; 
+}
+
+.error-message {
+    color: red; 
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #3713b9;
+    color: #eae0e0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* admin dashboard */
+.admin-dashboard-section {
+    font-family: Arial, sans-serif;
+    background-image: url("/userImage/pexels-mudassir-ali-2680270\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.admin-d-c{
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.admin-dashboard-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #ab0000;
+    color: #fff;
+}
+
+
+
+.go-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.go-home-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* admin home page  */
+
+.card-container{
+    background-image: url("/userImage/pexels-abdullah-ghatasheh-1631677.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* admin adding new user  */
+
+.admin-new-user-section {
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/userImage/pexels-andreea-ch-1166644.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+ 
+}
+
+.admin-new-user-section-container{
+    width: 40%;
+    text-align: center;   
+}
+
+.admin-new-user-section h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.admin-new-user-section  .user-form{
+    width: 450px;
+
+}
+
+
+
+.user-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form input[type="password"],
+.user-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.user-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success-message {
+    color: rgb(46, 164, 13);
+    margin-top: 10px;
+}
+
+.go-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+}
+
+/* admin edit section */
+
+.admin-edit-user-section {
+    font-family: Arial, sans-serif;
+    background-image: url("/userImage/pexels-miguel-á-padriñán-1111318.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.admin-edit-user-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.admin-edit-user-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}

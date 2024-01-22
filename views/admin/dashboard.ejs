@@ -1,0 +1,72 @@
+<%- include('../layouts/header.ejs') %>
+<nav class="navbar bg-info">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search User" name="search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+<section class="admin-dashboard-section">
+
+   
+<div  class="admin-d-c"> 
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Image</th>
+                <!-- <th>Verified</th> -->
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (users.length > 0) { %>
+                <% for (let i = 0; i < users.length; i++) { %>
+                    <tr>
+                        <td><%= users[i].name %></td>
+                        <td><%= users[i].email %></td>
+                        <td><%= users[i].mobile %></td>
+                        <td><img src="/userImage/<%= users[i].image %>" alt="<%= users[i].image %>" width="100px" height="100px"></td>
+                        <!-- <td><%= users[i].is_verified %></td> -->
+                        <td>
+                            <a href="/admin/edit-user?id=<%= users[i]._id %>" class="edit-button bg-success text-light text-decoration-none btn btn-outline-success btn-rounded-pill">Edit</a>
+                            
+                            <a href="/admin/delete-user?id=<%= users[i]._id %>" class="delete-button bg-danger text-light text-decoration-none btn btn-outline-danger btn-rounded-pill">Delete</a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } else { %>
+                <tr>
+                    <td colspan="5">No users found</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+   
+
+    <a href="/admin/home" class="go-home-button">Go to Home</a>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item <%= currentPage === 1 ? 'disabled' : '' %>">
+                <a class="page-link" href="?page=<%= currentPage - 1 %>">Previous</a>
+            </li>
+            <% for (let i = 1; i <= totalPages; i++) { %>
+                <li class="page-item <%= currentPage === i ? 'active' : '' %>">
+                    <a class="page-link" href="?page=<%= i %>"><%= i %></a>
+                </li>
+            <% } %>
+            <li class="page-item <%= currentPage  === totalPages ? 'disabled' : '' %>">
+                <a class="page-link" href="?page=<%= currentPage + 1 %>">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</section>
+
+<%- include('../layouts/footer.ejs') %>

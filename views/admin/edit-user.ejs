@@ -1,0 +1,32 @@
+<%- include('../layouts/header.ejs') %>
+
+<section class="admin-edit-user-section">
+    <div class="admin-edit-user-container">
+        <h1 class="text-light">Edit User</h1>
+
+        <form action="" method="post">
+            <div class="form-group text-light">
+                <label class="text-light" for="name">Name:</label>
+                <input type="text" id="name" name="name" value="<%= user.name %>" required>
+            </div>
+            <div class="form-group text-light ">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="<%= user.email %>" required>
+            </div>
+            <div class="form-group text-light">
+                <label for="mno">Mobile:</label>
+                <input type="text" id="mno" name="mno" value="<%= user.mobile %>" required>
+            </div>
+            <div class="form-group">
+                <label for="verified">Verified:</label>
+                <input type="checkbox" id="verified" name="verified" <%= user.is_verified ? 'checked' : '' %>>
+            </div>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="submit" value="Update User">
+        </form>
+
+        <a class="text-decoration-none btn btn-success btn-roundedpill" href="/admin">Go to Dashboard</a>
+    </div>
+</section>
+
+<%- include('../layouts/footer.ejs') %>

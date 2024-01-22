@@ -1,0 +1,41 @@
+<%- include('../layouts/header.ejs')%>
+
+<section class="user-home-section">
+    
+
+    <div style="height: 100vh;" class="content-container">
+        <div class="container-2">
+        <h3>Welcome, <%= user.name %></h3>
+        <div class="image-container">
+            <img src="userImage/<%= user.image%>" alt="<%= user.image%>">
+        </div>
+
+        <table  class="user-info">
+            <tr>
+                <th>Email</th>
+                <td><%= user.email %></td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td><%= user.mobile %></td>
+            </tr>
+            <tr>
+                <th>Verified</th>
+                <td>
+                    <% if (user.is_admin == 0) { %>
+                    Verified
+                    <% } %>
+                </td>
+            </tr>
+        </table>
+        <div class="button-container">
+            <a  style="background-color: green;" href="/edit?id=<%= user._id %>">Edit</a>
+            <a style="background-color: red;" href="/logout">Logout</a>
+        </div>
+    </div>
+    </div>
+
+   
+</section>
+
+<%- include('../layouts/footer.ejs')%>
